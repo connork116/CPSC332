@@ -41,15 +41,15 @@ Fall 2022
             //Classes are "constructor functions"            
             //Ball class:
             //#region no prototype method
-            // function Ball(radius, color) {
-            //     this.radius = radius; //public properties
-            //     this.color = color;
+            function Ball(radius, color) {
+                this.radius = radius; //public properties
+                this.color = color;
 
-            //     //memory allocated for EACH instance of Ball!
-            //     this.draw = function () {
-            //         console.log("draw method");
-            //     };
-            // };
+                //memory allocated for EACH instance of Ball!
+                this.draw = function () {
+                    console.log("draw method");
+                };
+            };
             //#endregion
 
             //#region prototype method class
