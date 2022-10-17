@@ -1,3 +1,8 @@
+<!--
+CPSC 332 Particiaption 10-10 Page
+Connor King
+Fall 2022
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -121,21 +126,6 @@
                     context.restore();
                     this.draw();
                 };
-
-                function addDiv() {
-                    if (documnet.getElementById("temp-div") == null) {
-                        let newDiv = document.createElement("div");
-                        newDiv.id = "temp-div";
-                        newDiv.style = "border: 2px soild red; padding: 10px; border-radius: 30px";
-                        document.getElementById("container").appendChild;
-
-                        let newP = document
-                            .createElement
-                        let
-
-                    }
-
-                }
             };
             //#endregion
 
@@ -228,22 +218,6 @@
             };
 
             //#endregion
-
-            document.getElementById("temp-div")
-                .addEventListener("click", () => {
-                    alert("temp-div clicked")
-                });
-
-            // attach event listener to a containing element that is static
-            document.getElementById("container")
-                .addEventListener("click", function (e) {
-                    if (e.target.id == "temp-div") {
-
-                    }
-                    else {
-                        alert("it was not temp-div");
-                    }
-                });
 
         };//end of onload
     </script>
