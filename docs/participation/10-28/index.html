@@ -13,6 +13,8 @@ Fall 2022
     <!-- //#1 How do we use JQuery? Include the script! -->
     <!-- Download and reference a local file -->
     <script src="jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+        integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
     <!-- Reference a CDN (Content Delivery Network) source -->
     <!-- Get the latest at https://code.jquery.com/ -->
 
@@ -101,6 +103,18 @@ Fall 2022
             //2. Apply a background color, border, padding, and margin (your choice) to the ordered list using the object literal method demonstrated during lecture
             //3. Add an event listener to the ordered list list items so the color changes as you hover over each individual list item (color is your choice).
 
+            $("div").attr("class", "draggable ui-widget-content");
+
+            $(function () {
+                $(".draggable").draggable();
+                $("div").css({
+                    "text-align": "center",
+                    "background-color": "blue",
+                    "border": "3px",
+                    "padding": "10px",
+                    "margin": "5px",
+                })
+            });
         }); //end of ready function 
     </script>
 
